@@ -3,8 +3,9 @@ package routes
 import (
 	"bluebell/controller"
 	"bluebell/logger"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func Setup(mode string) *gin.Engine {
@@ -20,6 +21,7 @@ func Setup(mode string) *gin.Engine {
 	})
 
 	r.POST("/signup", controller.SignUpHandler)
+	r.POST("/login", controller.LoginHandler)
 
 	//-----路由部分end
 

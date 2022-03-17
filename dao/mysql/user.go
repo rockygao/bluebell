@@ -3,11 +3,18 @@ package mysql
 import (
 	"bluebell/models"
 	"crypto/md5"
+	"database/sql"
 	"encoding/hex"
 	"errors"
 )
 
 const secret = "bluebell"
+
+var (
+	ErrorUserExist       = errors.New("用户已存在")
+	ErrorUserNotExist    = errors.New("用户不存在")
+	ErrorInvalidPassword = errors.New("用户或密码错误")
+)
 
 func InsertUser(user *models.User) (err error) {
 	// 对密码进行加密
@@ -28,14 +35,32 @@ func CheckUserExist(username string) (err error) {
 	}
 
 	if count > 0 {
-		return errors.New("用户已存在")
+		return ErrorUserExist
 	}
 	return
 }
 
-func SignUp() {
-	// 执行语句入库
+func Login(user *models.User) (err error) {
+	oPassword := user.Password
+	sqlStr := `select user_id,username,password from user where username=?`
+	err = db.Get(user, sqlStr, user.Username)
+	// 用户不存在
+	if err == sql.ErrNoRows {
+		return ErrorUserNotExist
+	}
+	// 查询报错
+	if err != nil {
+		return err
+	}
+	// 判断密码
+	password := encryptPassword(oPassword)
+	if password != user.Password {
+		return ErrorInvalidPassword
+	}
+
+	return
 }
+
 func encryptPassword(oPassword string) string {
 	h := md5.New()
 	h.Write([]byte(secret))
