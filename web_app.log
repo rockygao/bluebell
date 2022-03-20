@@ -198,3 +198,29 @@
 {"level":"INFO","time":"2022-03-02T23:56:28.720+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000608671}
 {"level":"DEBUG","time":"2022-03-16T22:59:25.051+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
 {"level":"INFO","time":"2022-03-16T22:59:46.266+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.013231421}
+{"level":"DEBUG","time":"2022-03-20T23:12:10.179+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-20T23:12:10.180+0800","caller":"mysql/mysql.go:25","msg":"connect DB failed","error":"dial tcp 127.0.0.1:3306: connect: connection refused"}
+{"level":"DEBUG","time":"2022-03-20T23:20:36.006+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-20T23:20:39.410+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.011062075}
+{"level":"ERROR","time":"2022-03-20T23:21:04.821+0800","caller":"controller/user.go:95","msg":"logic.login faild","username":"111","error":"用户或密码错误"}
+{"level":"INFO","time":"2022-03-20T23:21:04.822+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.0007384}
+{"level":"INFO","time":"2022-03-20T23:21:12.934+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000471569}
+{"level":"INFO","time":"2022-03-20T23:21:20.454+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000568113}
+{"level":"INFO","time":"2022-03-20T23:21:21.822+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000574858}
+{"level":"INFO","time":"2022-03-20T23:21:24.129+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.00048993}
+{"level":"INFO","time":"2022-03-20T23:28:12.130+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-20T23:28:12.132+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-20T23:47:10.679+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-20T23:47:13.943+0800","caller":"logger/logger.go:79","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000062159}
+{"level":"INFO","time":"2022-03-20T23:47:42.423+0800","caller":"logger/logger.go:79","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000088279}
+{"level":"INFO","time":"2022-03-20T23:47:47.236+0800","caller":"logger/logger.go:79","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000228745}
+{"level":"INFO","time":"2022-03-21T00:02:36.574+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T00:02:36.577+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-21T00:02:41.288+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-21T00:02:44.714+0800","caller":"logger/logger.go:79","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000176949}
+{"level":"INFO","time":"2022-03-21T00:13:45.011+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T00:13:45.013+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-21T00:14:58.380+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-21T00:15:02.783+0800","caller":"logger/logger.go:79","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000280204}
+{"level":"INFO","time":"2022-03-21T00:15:08.672+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-21T00:15:08.674+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}

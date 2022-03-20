@@ -90,7 +90,8 @@ func LoginHandler(c *gin.Context) {
 	}
 
 	// 2、业务逻辑处理
-	if err := logic.Login(p); err != nil {
+	token, err := logic.Login(p)
+	if err != nil {
 		zap.L().Error("logic.login faild", zap.String("username", p.Username), zap.Error(err))
 		ResponseError(c, CodeInvalidPassword)
 		//c.JSON(http.StatusOK, gin.H{
@@ -100,7 +101,7 @@ func LoginHandler(c *gin.Context) {
 	}
 
 	// 3、返回响应
-	ResponseSuccess(c, nil)
+	ResponseSuccess(c, token)
 	//c.JSON(http.StatusOK, gin.H{
 	//	"msg": "登录成功 ",
 	//})
