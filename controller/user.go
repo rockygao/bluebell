@@ -6,6 +6,7 @@ import (
 	"bluebell/models"
 	"errors"
 	"fmt"
+
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.uber.org/zap"
@@ -90,7 +91,8 @@ func LoginHandler(c *gin.Context) {
 	}
 
 	// 2、业务逻辑处理
-	token, err := logic.Login(p)
+	aToken, rToken, err := logic.Login(p)
+	// fmt.Println("AAAAAAAA---", aToken, "RRRRR---------", rToken)
 	if err != nil {
 		zap.L().Error("logic.login faild", zap.String("username", p.Username), zap.Error(err))
 		ResponseError(c, CodeInvalidPassword)
@@ -101,7 +103,10 @@ func LoginHandler(c *gin.Context) {
 	}
 
 	// 3、返回响应
-	ResponseSuccess(c, token)
+	data := make(map[string]string)
+	data["accessToken"] = aToken
+	data["refreshToken"] = rToken
+	ResponseSuccess(c, &data)
 	//c.JSON(http.StatusOK, gin.H{
 	//	"msg": "登录成功 ",
 	//})

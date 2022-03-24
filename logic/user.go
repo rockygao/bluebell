@@ -5,6 +5,7 @@ import (
 	"bluebell/models"
 	"bluebell/pkg/jwt"
 	"bluebell/pkg/snowflake"
+	"fmt"
 )
 
 func SignUp(p *models.ParamSignUp) (err error) {
@@ -25,16 +26,18 @@ func SignUp(p *models.ParamSignUp) (err error) {
 	return mysql.InsertUser(user)
 }
 
-func Login(p *models.ParamLogin) (token string, err error) {
+func Login(p *models.ParamLogin) (aToken, rToken string, err error) {
 	// 创建一个User实例
 	user := &models.User{
 		Username: p.Username,
 		Password: p.Password,
 	}
+	fmt.Println(user)
 	// 保存进数据库 传递的是一个指针，所以能拿到user.UserID
 	if err := mysql.Login(user); err != nil {
-		return "", err
+		return "", "", err
 	}
+	fmt.Println(user)
 	//生成JWT
 	return jwt.GenToken(user.UserID, user.Username)
 

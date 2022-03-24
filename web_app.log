@@ -224,3 +224,76 @@
 {"level":"INFO","time":"2022-03-21T00:15:02.783+0800","caller":"logger/logger.go:79","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000280204}
 {"level":"INFO","time":"2022-03-21T00:15:08.672+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2022-03-21T00:15:08.674+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:12:06.649+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:12:13.081+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:12:13.081+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.008388936}
+{"level":"ERROR","time":"2022-03-24T00:16:33.464+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:16:33.467+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.003023766}
+{"level":"ERROR","time":"2022-03-24T00:16:38.953+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"用户或密码错误"}
+{"level":"INFO","time":"2022-03-24T00:16:38.953+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.00058635}
+{"level":"INFO","time":"2022-03-24T00:18:49.734+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:18:49.736+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:18:53.445+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:18:55.749+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"用户或密码错误"}
+{"level":"INFO","time":"2022-03-24T00:18:55.749+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000993078}
+{"level":"ERROR","time":"2022-03-24T00:18:59.342+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:18:59.342+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001141608}
+{"level":"ERROR","time":"2022-03-24T00:19:26.136+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:19:26.136+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000696615}
+{"level":"ERROR","time":"2022-03-24T00:19:53.262+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:19:53.262+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.000812397}
+{"level":"INFO","time":"2022-03-24T00:20:46.883+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:20:46.885+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:20:50.003+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:20:53.488+0800","caller":"controller/user.go:96","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:20:53.488+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.002106637}
+{"level":"INFO","time":"2022-03-24T00:22:39.524+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:22:39.526+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:22:42.633+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:22:46.790+0800","caller":"controller/user.go:97","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:22:46.790+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001388165}
+{"level":"INFO","time":"2022-03-24T00:23:23.007+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:23:23.008+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:23:25.528+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:23:27.943+0800","caller":"controller/user.go:97","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:23:27.943+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001462376}
+{"level":"INFO","time":"2022-03-24T00:25:43.246+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:25:43.248+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:25:46.047+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:25:47.979+0800","caller":"controller/user.go:97","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:25:47.980+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.00116132}
+{"level":"INFO","time":"2022-03-24T00:26:36.021+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:26:36.022+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:27:11.446+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:27:14.512+0800","caller":"controller/user.go:97","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:27:14.512+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001308714}
+{"level":"INFO","time":"2022-03-24T00:29:17.944+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:29:17.946+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:29:20.578+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:29:23.687+0800","caller":"controller/user.go:97","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:29:23.687+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001421193}
+{"level":"INFO","time":"2022-03-24T00:29:59.416+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:29:59.418+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:30:01.773+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-03-24T00:30:04.833+0800","caller":"controller/user.go:97","msg":"logic.login faild","username":"111","error":"key is of invalid type"}
+{"level":"INFO","time":"2022-03-24T00:30:04.833+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001291855}
+{"level":"INFO","time":"2022-03-24T00:30:56.969+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:30:56.970+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:31:00.523+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-24T00:31:03.884+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001272293}
+{"level":"INFO","time":"2022-03-24T00:32:11.832+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T00:32:11.834+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T00:32:14.756+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-24T00:32:16.992+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.004590378}
+{"level":"DEBUG","time":"2022-03-24T10:33:33.830+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-24T10:33:37.566+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001649476}
+{"level":"INFO","time":"2022-03-24T10:37:30.377+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T10:37:30.378+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T10:37:33.443+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-24T10:37:35.490+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001520939}
+{"level":"INFO","time":"2022-03-24T10:53:31.115+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T10:53:31.116+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-03-24T10:53:34.207+0800","caller":"bluebell/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2022-03-24T10:53:39.199+0800","caller":"logger/logger.go:79","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"ApiPOST Runtime +https://www.apipost.cn","errors":"","cost":0.001615705}
+{"level":"INFO","time":"2022-03-24T10:54:29.746+0800","caller":"bluebell/main.go:84","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-03-24T10:54:29.747+0800","caller":"bluebell/main.go:93","msg":"Server exiting"}

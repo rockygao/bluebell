@@ -9,6 +9,8 @@ import (
 
 // 设置有效期
 const TokenExpireDuration = time.Hour * 2
+const RefreshTokenExpireDuration = time.Hour * 10
+const JwtIssuer = "bluebell"
 
 // 加盐
 var MySecret = []byte("夏天夏天悄悄过去")
@@ -24,20 +26,29 @@ type MyClaims struct {
 }
 
 // GenToken 生成JWT
-func GenToken(userID int64, username string) (string, error) {
+func GenToken(userID int64, username string) (aToken, rToken string, err error) {
 	// 创建一个我们自己的声明
 	c := MyClaims{
 		userID,
 		username, // 自定义字段
 		jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(TokenExpireDuration).Unix(), // 过期时间
-			Issuer:    "bluebell",                                 // 签发人
+			Issuer:    JwtIssuer,                                  // 签发人
 		},
 	}
-	// 使用指定的签名方法创建签名对象
-	token := jwt.NewWithClaims(jwt.SigningMethodHS256, c)
-	// 使用指定的secret签名并获得完整的编码后的字符串token
-	return token.SignedString(MySecret)
+	// 使用指定的签名方法创建签名对象  使用指定的secret签名并获得完整的编码后的字符串token
+	aToken, err = jwt.NewWithClaims(jwt.SigningMethodHS256, c).SignedString(MySecret)
+	// if err != nil {
+
+	// }
+
+	// refresh token 不需要存任何自定义数据
+	rToken, err = jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.StandardClaims{
+		ExpiresAt: time.Now().Add(RefreshTokenExpireDuration).Unix(), // 过期时间
+		Issuer:    JwtIssuer,                                         // 签发人
+	}).SignedString(MySecret)
+
+	return
 }
 
 // ParseToken 解析JWT
